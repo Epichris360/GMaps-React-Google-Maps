@@ -8,7 +8,7 @@ import { GMaps, MapWithASearchBox } from './components/containers'
 const app = (
 	<Provider store={store.configure(null)}>
 		<div className="container">
-			<MapWithASearchBox />
+			<GMaps />
 		</div>
 	</Provider>
 )

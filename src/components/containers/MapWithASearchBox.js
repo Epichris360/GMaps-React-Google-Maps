@@ -6,7 +6,7 @@ import {
   GoogleMap,
   Marker,
 } from "react-google-maps";
-import SearchBox from "react-google-maps/lib/components/places/SearchBox";
+import SearchBox from "../../../node_modules/react-google-maps/lib/components/places/SearchBox";
 
 const MapWithASearchBox = compose(
   withProps({
@@ -30,7 +30,7 @@ const MapWithASearchBox = compose(
         },
         onBoundsChanged: () => {
           this.setState({
-            bounds: refs.map.getBounds(),
+            bounds: refs.map.getBounds(), 
             center: refs.map.getCenter(),
           })
         },
@@ -103,5 +103,6 @@ const MapWithASearchBox = compose(
 
   </GoogleMap>
 );
+
 
 export default MapWithASearchBox
